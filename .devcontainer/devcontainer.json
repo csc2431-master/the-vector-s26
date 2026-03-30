@@ -1,0 +1,25 @@
+{
+"name": "CSC 2431: Data Structures and Algorithms",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash",
+        "C_Cpp.default.compilerPath": "/usr/bin/g++",        
+        "github.copilot.enable": {
+                "*": false
+        }, 
+        "github.copilot.inlineSuggest.enable": false
+      },
+      "extensions": [
+        "ms-vscode.cpptools",
+        "ms-vscode.cmake-tools",
+        "ms-azuretools.vscode-docker"
+      ]
+    }
+  },
+  "remoteUser": "vscode",
+  "postCreateCommand": "make doctor || true"
+}
